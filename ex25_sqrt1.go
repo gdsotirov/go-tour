@@ -1,4 +1,7 @@
-
+/* Exercise: Loops and Functions 
+ * See http://tour.golang.org/#25
+ * Description: Calculate square root with Newton's method in 10 iterations
+ */
 
 package main
 
@@ -21,3 +24,4 @@ func Sqrt(x float64) float64 {
 func main() {
   fmt.Println(Sqrt(2))
 }
+

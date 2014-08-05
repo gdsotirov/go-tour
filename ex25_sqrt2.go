@@ -1,3 +1,8 @@
+/* Exercise: Loops and Functions 
+ * See http://tour.golang.org/#25
+ * Description: Calculate square root with Newton's method with precision
+ */
+
 package main
 
 import (
@@ -21,3 +26,4 @@ func Sqrt(x float64) float64 {
 func main() {
   fmt.Println(Sqrt(2))
 }
+
