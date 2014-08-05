@@ -1,9 +1,18 @@
+/* Exercise: Slices
+ * See http://tour.golang.org/#38
+ * Description: Create a slice of slices (i.e. a two-dimensional array),
+ *              inialize it's values with a function and generate picture
+ */
+
 package main
 
-import "code.google.com/p/go-tour/pic"
+import (
+    //"math" /* uncomment when necessary */
+    "code.google.com/p/go-tour/pic"
+)
 
 func Pic(dx, dy int) [][]uint8 {
-	/* create two dimensional array */    
+    /* create two dimensional array */    
     matrix := make([][]uint8, dy)
     for i := 0; i < dy; i++ {
         matrix[i] = make([]uint8, dx)
@@ -13,6 +22,8 @@ func Pic(dx, dy int) [][]uint8 {
     for i := 0; i < dx; i++ {
         for j := 0; j < dy; j++ {
             matrix[i][j] = uint8(i * j)
+                     /* or uint8((i + j)/2) or */
+                     /* or uint8(math.Pow(float64(i+j), 2)) */
         }
     }
 
@@ -22,3 +33,4 @@ func Pic(dx, dy int) [][]uint8 {
 func main() {
     pic.Show(Pic)
 }
+
