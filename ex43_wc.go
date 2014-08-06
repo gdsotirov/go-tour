@@ -7,6 +7,7 @@ package main
 
 import (
     "code.google.com/p/go-tour/wc"
+    "fmt"
     "strings"
 )
 
@@ -18,7 +19,7 @@ func WordCount(s string) map[string]int {
       wc[words[i]]++
     }
 
-    fmt.Println("Map is ", cnt);
+    fmt.Println("Map is ", wc);
     return wc
 }
 
