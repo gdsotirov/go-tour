@@ -3,7 +3,7 @@ GOBUILD=$(GOCMD) build
 
 all: build
 
-BINS=ex25_sqrt1 ex25_sqrt2 ex38_pic ex43_wc ex46_fib ex50_cbrt ex58_sqrt_err ex59_http ex60_http_hdlr ex62_pic2 ex63_rot13
+BINS=ex25_sqrt1 ex25_sqrt2 ex38_pic ex43_wc ex46_fib ex50_cbrt ex58_sqrt_err ex59_http ex60_http_hdlr ex62_pic2 ex63_rot13 ex72_tree
 
 build: $(BINS)
 
@@ -38,6 +38,9 @@ ex62_pic2: ex62_pic2.go
 	$(GOBUILD) $<
 
 ex63_rot13: ex63_rot13.go
+	$(GOBUILD) $<
+
+ex72_tree: ex72_tree.go
 	$(GOBUILD) $<
 
 clean:
