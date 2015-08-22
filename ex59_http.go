@@ -1,5 +1,5 @@
 /* Exercise: Web servers
- * See http://tour.golang.org/#59
+ * See http://web.archive.org/web/20140807003324/http://tour.golang.org/#59
  * Description: Simple web server that prints a greeting
  */
 

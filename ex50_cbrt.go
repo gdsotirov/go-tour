@@ -1,5 +1,5 @@
 /* Exercise: Advanced Exercise: Complex cube roots
- * See http://tour.golang.org/#50
+ * See http://web.archive.org/web/20140807003324/http://tour.golang.org/#50
  * Description: Calcualte cube root by Newton's method
  */
 
