@@ -1,5 +1,5 @@
 /* Exercise: Errors
- * See http://tour.golang.org/#58
+ * See http://tour.golang.org/methods/9
  * Description: Make Sqrt function from previous exercise return error when given a negative number argument
  */
 

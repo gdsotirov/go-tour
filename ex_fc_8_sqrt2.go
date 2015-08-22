@@ -1,5 +1,5 @@
 /* Exercise: Loops and Functions 
- * See http://tour.golang.org/#25
+ * See http://tour.golang.org/flowcontrol/8
  * Description: Calculate square root with Newton's method with precision
  */
 

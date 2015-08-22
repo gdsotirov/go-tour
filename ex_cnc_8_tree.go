@@ -1,12 +1,12 @@
 /* Exercise: Equivalent Binary Trees
- * See http://tour.golang.org/#72
+ * See http://tour.golang.org/concurrency/8
  * Description: Walk binary tree and compare two trees for equivalance
  */
 
 package main
 
 import (
-    "code.google.com/p/go-tour/tree"
+    "golang.org/x/tour/tree"
     "fmt"
 )
 

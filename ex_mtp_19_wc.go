@@ -1,12 +1,12 @@
 /* Exercise: Maps
- * See http://tour.golang.org/#43
+ * See http://tour.golang.org/moretypes/19
  * Description: Implement a word count function with a map
  */
 
 package main
 
 import (
-    "code.google.com/p/go-tour/wc"
+    "golang.org/x/tour/wc"
     "fmt"
     "strings"
 )

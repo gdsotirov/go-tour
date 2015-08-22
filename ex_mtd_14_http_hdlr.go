@@ -1,5 +1,5 @@
 /* Exercise: HTTP Handlers
- * See http://tour.golang.org/#60
+ * See http://tour.golang.org/methods/14
  * Description: Web server handling specific paths
  */
 

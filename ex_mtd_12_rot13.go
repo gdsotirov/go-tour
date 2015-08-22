@@ -1,5 +1,5 @@
 /* Exercise: Rot13 Reader
- * See http://tour.golang.org/#63
+ * See http://tour.golang.org/methods/12
  * Description: Implement ROT13 reader on top of io.Reader
  */
 

@@ -3,3 +3,8 @@ Go-Tour
 The exercises from my Go Language Tour (see http://tour.golang.org/) when
 I first took it in beginning of August, 2014.
 
+Updated on 2015-08-22
+
+Add ipaddr (Stringer) exercise
+Rename exercises following new article sections
+Remove cube root exercise

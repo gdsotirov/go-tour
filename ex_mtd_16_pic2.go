@@ -1,12 +1,12 @@
 /* Exercise: Images
- * See http://tour.golang.org/#62
+ * See http://tour.golang.org/methods/16
  * Description: Generate and display image with implementation of image.Image
  */
 
 package main
 
 import (
-    "code.google.com/p/go-tour/pic"
+    "golang.org/x/tour/pic"
     "image"
     "image/color"
 )

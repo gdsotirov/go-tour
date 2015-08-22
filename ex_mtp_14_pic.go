@@ -1,5 +1,5 @@
 /* Exercise: Slices
- * See http://tour.golang.org/#38
+ * See http://tour.golang.org/moretypes/14
  * Description: Create a slice of slices (i.e. a two-dimensional array),
  *              inialize it's values with a function and generate picture
  */
@@ -8,7 +8,7 @@ package main
 
 import (
     //"math" /* uncomment when necessary */
-    "code.google.com/p/go-tour/pic"
+    "golang.org/x/tour/pic"
 )
 
 func Pic(dx, dy int) [][]uint8 {
