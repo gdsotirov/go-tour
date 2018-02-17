@@ -3,7 +3,10 @@ GOBUILD=$(GOCMD) build
 
 all: build
 
-BINS=ex_fc_8_sqrt1 ex_fc_8_sqrt2 ex_mtp_14_pic ex_mtp_19_wc ex_mtp_22_fib ex_mtd_7_ipaddr ex_mtd_9_sqrt_err ex_mtd_12_rot13 ex_mtd_14_http_hdlr ex_mtd_16_pic2 ex_cnc_8_tree ex_cnc_10_crawler
+BINS=ex_fc_8_sqrt1 ex_fc_8_sqrt2 \
+     ex_mtp_18_pic ex_mtp_23_wc ex_mtp_26_fib \
+     ex_mtd_18_ipaddr ex_mtd_20_sqrt_err ex_mtd_23_rot13 ex_mtd_25_pic2 \
+     ex_cnc_8_tree ex_cnc_10_crawler
 
 build: $(BINS)
 
@@ -13,28 +16,25 @@ ex_fc_8_sqrt1: ex_fc_8_sqrt1.go
 ex_fc_8_sqrt2: ex_fc_8_sqrt2.go
 	$(GOBUILD) $<
 
-ex_mtp_14_pic: ex_mtp_14_pic.go
+ex_mtp_18_pic: ex_mtp_18_pic.go
 	$(GOBUILD) $<
 
-ex_mtp_19_wc: ex_mtp_19_wc.go
+ex_mtp_23_wc: ex_mtp_23_wc.go
 	$(GOBUILD) $<
 
-ex_mtp_22_fib: ex_mtp_22_fib.go
+ex_mtp_26_fib: ex_mtp_26_fib.go
 	$(GOBUILD) $<
 
-ex_mtd_7_ipaddr: ex_mtd_7_ipaddr.go
+ex_mtd_18_ipaddr: ex_mtd_18_ipaddr.go
 	$(GOBUILD) $<
 
-ex_mtd_9_sqrt_err: ex_mtd_9_sqrt_err.go
+ex_mtd_20_sqrt_err: ex_mtd_20_sqrt_err.go
 	$(GOBUILD) $<
 
-ex_mtd_12_rot13: ex_mtd_12_rot13.go
+ex_mtd_23_rot13: ex_mtd_23_rot13.go
 	$(GOBUILD) $<
 
-ex_mtd_14_http_hdlr: ex_mtd_14_http_hdlr.go
-	$(GOBUILD) $<
-
-ex_mtd_16_pic2: ex_mtd_16_pic2.go
+ex_mtd_25_pic2: ex_mtd_25_pic2.go
 	$(GOBUILD) $<
 
 ex_cnc_8_tree: ex_cnc_8_tree.go

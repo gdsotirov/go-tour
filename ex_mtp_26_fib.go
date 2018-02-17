@@ -1,5 +1,5 @@
 /* Exercise: Fibonacci closure
- * See http://tour.golang.org/moretypes/22
+ * See https://tour.golang.org/moretypes/26
  * Description: Implement a Fibonacci numbers closure
  */
 

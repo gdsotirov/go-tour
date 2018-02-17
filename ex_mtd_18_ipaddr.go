@@ -1,5 +1,5 @@
 /* Exercise: IPAddr (Stringer)
- * See http://tour.golang.org/methods/7
+ * See https://tour.golang.org/methods/18
  * Description: Make the IPAddr type implement fmt.Stringer to print the address as a dotted quad
  */
 

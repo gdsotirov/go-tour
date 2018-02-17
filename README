@@ -9,3 +9,9 @@ Add ipaddr (Stringer) exercise
 Rename exercises following new article sections
 Remove cube root exercise
 Add previously omitted web crawler exercise
+
+Updated on 2018-02-17
+
+Rename exercises following expansion of articles
+Update URLs and use HTTPS
+Remove HTTP handler exercise
