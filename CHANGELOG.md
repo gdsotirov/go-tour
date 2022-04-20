@@ -39,3 +39,7 @@ Notable changes to the project since its beginning.
 
 - Removed cube root exercise.
 
+## 2014-08-07
+
+Initial release.
+
