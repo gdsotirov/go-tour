@@ -1,5 +1,5 @@
 /* Exercise: Images
- * See https://tour.golang.org/methods/25
+ * See https://go.dev/tour/methods/25
  * Description: Generate and display image with implementation of image.Image
  */
 

@@ -1,5 +1,5 @@
 /* Exercise: Slices
- * See https://tour.golang.org/moretypes/18
+ * See https://go.dev/tour/moretypes/18
  * Description: Create a slice of slices (i.e. a two-dimensional array),
  *              inialize it's values with a function and generate picture
  */

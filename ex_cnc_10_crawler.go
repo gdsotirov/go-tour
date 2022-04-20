@@ -1,5 +1,5 @@
 /* Exercise: Web Crawler
- * See https://tour.golang.org/concurrency/10
+ * See https://go.dev/tour/concurrency/10
  * Description: Implement a parallel web crawler without fetching the same URL twice
  */
 

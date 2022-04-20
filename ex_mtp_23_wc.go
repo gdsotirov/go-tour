@@ -1,5 +1,5 @@
 /* Exercise: Maps
- * See https://tour.golang.org/moretypes/23
+ * See https://go.dev/tour/moretypes/23
  * Description: Implement a word count function with a map
  */
 

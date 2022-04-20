@@ -1,5 +1,5 @@
 /* Exercise: Equivalent Binary Trees
- * See https://tour.golang.org/concurrency/8
+ * See https://go.dev/tour/concurrency/8
  * Description: Walk binary tree and compare two trees for equivalance
  */
 
