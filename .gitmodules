@@ -1,0 +1,3 @@
+[submodule "tour"]
+	path = tour
+	url = https://github.com/golang/tour.git
