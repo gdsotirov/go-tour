@@ -29,7 +29,7 @@ func (i Image) At(x, y int) color.Color {
     green:= uint8(y)
     /* You could experiment with values of blue between 0 and 255... */
     var blue uint8 = 255
-    /* and value sof alpha in the same range */
+    /* and values of alpha in the same range */
     var alpha uint8 = 255
     return color.RGBA{red, green, blue, alpha}
 }
