@@ -4,7 +4,7 @@ The exercises from my [Go Language Tour](https://go.dev/tour/) after
 I first took it in beginning of August, 2014 and then kept refreshing
 my knowledge whenever necessary.
 
-# Most important about Go language
+## Most important about Go language
 
 This is a summary of the most important points to consider with Go language
 when taking the tour and afterwards when using the language.
@@ -48,6 +48,8 @@ when taking the tour and afterwards when using the language.
    [Type parameters](https://go.dev/tour/generics/1),
    [Generic types](https://go.dev/tour/generics/2));
  - TODO
+
+## Usage
 
 To build the exercises do the following:
 
