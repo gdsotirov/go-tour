@@ -1,4 +1,4 @@
-module sotirov-bg.net/go-tour
+module github.com/gdsotirov/go-tour
 
 go 1.16
 
