@@ -40,7 +40,8 @@ type Fetcher interface {
 
 // Crawl uses fetcher to recursively crawl
 // pages starting with url, to a maximum of depth.
-func Crawl(url string, depth int, fetcher Fetcher, vu *Visited) {
+func Crawl(url string, depth int, fetcher Fetcher) {
+    defer wg.Done()
     if depth <= 0 {
         //fmt.Println("depth limit hit. exiting")
         return
@@ -60,15 +61,19 @@ func Crawl(url string, depth int, fetcher Fetcher, vu *Visited) {
     for _, u := range urls {
         // Fetch URLs in parallel
         //fmt.Printf("going further: %s\n", u)
-        go Crawl(u, depth-1, fetcher, vu)
+        wg.Add(1)
+        go Crawl(u, depth-1, fetcher)
     }
     return
 }
 
-func main() {
-    vurls := Visited{url: make(map[string]bool)}
+var vu = Visited{url: make(map[string]bool)}
+var wg sync.WaitGroup
 
-    Crawl("http://go.dev/", 4, fetcher, &vurls)
+func main() {
+    wg.Add(1)
+    Crawl("https://go.dev/", 4, fetcher)
+    wg.Wait()
 
     //fmt.Println("Done.")
 }
