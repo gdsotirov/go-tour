@@ -25,6 +25,8 @@ func Print(t *tree.Tree) {
 // from the tree to the channel ch.
 func Walk(t *tree.Tree, ch chan int) {
     var wr func(t *tree.Tree)
+
+    defer close(ch)
     wr = func(t *tree.Tree) {
         if t.Left != nil {
             wr(t.Left)
@@ -39,7 +41,6 @@ func Walk(t *tree.Tree, ch chan int) {
         }
     }
     wr(t)
-    close(ch)
 }
 
 // Same determines whether the trees
