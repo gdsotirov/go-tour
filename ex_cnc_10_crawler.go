@@ -68,7 +68,7 @@ func Crawl(url string, depth int, fetcher Fetcher, vu *Visited) {
 func main() {
     vurls := Visited{url: make(map[string]bool)}
 
-    Crawl("http://golang.org/", 4, fetcher, &vurls)
+    Crawl("http://go.dev/", 4, fetcher, &vurls)
 
     //fmt.Println("Done.")
 }
@@ -90,34 +90,35 @@ func (f fakeFetcher) Fetch(url string) (body string, urls []string, err error) {
 
 // fetcher is a populated fakeFetcher.
 var fetcher = fakeFetcher{
-    "https://golang.org/": &fakeResult{
+    "https://go.dev/": &fakeResult{
         "The Go Programming Language",
         []string{
-            "https://golang.org/pkg/",
-            "https://golang.org/cmd/",
+            "https://go.dev/pkg/",
+            "https://go.dev/cmd/",
         },
     },
-    "https://golang.org/pkg/": &fakeResult{
+    "https://go.dev/pkg/": &fakeResult{
         "Packages",
         []string{
-            "https://golang.org/",
-            "https://golang.org/cmd/",
-            "https://golang.org/pkg/fmt/",
-            "https://golang.org/pkg/os/",
+            "https://go.dev/",
+            "https://go.dev/cmd/",
+            "https://go.dev/pkg/fmt/",
+            "https://go.dev/pkg/os/",
         },
     },
-    "https://golang.org/pkg/fmt/": &fakeResult{
+    "https://go.dev/pkg/fmt/": &fakeResult{
         "Package fmt",
         []string{
-            "https://golang.org/",
-            "https://golang.org/pkg/",
+            "https://go.dev/",
+            "https://go.dev/pkg/",
         },
     },
-    "https://golang.org/pkg/os/": &fakeResult{
+    "https://go.dev/pkg/os/": &fakeResult{
         "Package os",
         []string{
-            "https://golang.org/",
-            "https://golang.org/pkg/",
+            "https://go.dev/",
+            "https://go.dev/pkg/",
         },
     },
 }
+
