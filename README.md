@@ -41,13 +41,17 @@ when taking the tour and afterwards when using the language.
  - _interface type_ is defined as a set of method signatures and a value of
    such type can hold any value that implements those methods (see
    [Interfaces](https://go.dev/tour/methods/9));
- - error state is expressed with `error` values (see
+ - _error state_ is expressed with `error` values (see
    [Errors](https://go.dev/tour/methods/19));
  - _type parameters_ and _generic types_ are the way Go implements _generics_
    since version 1.18 (see
    [Type parameters](https://go.dev/tour/generics/1),
    [Generic types](https://go.dev/tour/generics/2));
- - TODO
+ - _goroutines_ are a lightweight threads managed by the Go runtime (see
+  [Goroutines](https://go.dev/tour/concurrency/1)), which communicate and
+  synchronize through _channels_ (see
+  [Channels](https://go.dev/tour/concurrency/2)) as sends and receives on
+  channels block until the other side is ready;
 
 ## Usage
 
