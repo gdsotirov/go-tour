@@ -10,6 +10,17 @@ import (
     "fmt"
 )
 
+// Print tree to standard output
+func Print(t *tree.Tree) {
+    ch := make(chan int)
+    go Walk(t, ch)
+
+    for i := range ch {
+        fmt.Printf("%v ", i)
+    }
+    fmt.Print("\n")
+}
+
 // Walk walks the tree t sending all values
 // from the tree to the channel ch.
 func Walk(t *tree.Tree, ch chan int) {
@@ -56,17 +67,15 @@ func Same(t1, t2 *tree.Tree) bool {
 }
 
 func main() {
-    ch := make(chan int)
-    tr := tree.New(1)
+    tr1 := tree.New(1)
+    tr2 := tree.New(2)
 
-    go Walk(tr, ch)
+    fmt.Print("Random tree 1: ")
+    Print(tr1)
+    fmt.Print("Random tree 2: ")
+    Print(tr2)
 
-    fmt.Print("Walk random tree: ")
-    for i := range ch {
-        fmt.Printf("%v ", i)
-    }
-    fmt.Print("\n")
-
-    fmt.Println("First  comparision: ", Same(tree.New(1), tree.New(1)))
-    fmt.Println("Second comparision: ", Same(tree.New(1), tree.New(2)))
+    fmt.Println("First  comparision (tree 1 and 1): ", Same(tr1, tr1))
+    fmt.Println("Second comparision (tree 1 and 2): ", Same(tr1, tr2))
 }
+
